@@ -18,7 +18,7 @@ public class NetCollision : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider collision) {
-		ding.Play();
+		//ding.Play();
 		Debug.Log("sgaeRGehWERYQ");
 		score += 1;
 		text.text = string.Format ("{0}", score);

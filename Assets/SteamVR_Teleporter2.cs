@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SteamVR_Teleporter2 : MonoBehaviour
+public class SteamVR_Teleporter : MonoBehaviour
 {
 	public enum TeleportType
 	{
@@ -30,7 +30,7 @@ public class SteamVR_Teleporter2 : MonoBehaviour
 			trackedController = gameObject.AddComponent<SteamVR_TrackedController>();
 		}
 
-		trackedController.PadClicked += new ClickedEventHandler(DoClick);
+		trackedController.TriggerClicked += new ClickedEventHandler(DoClick);
 
 		if (teleportType == TeleportType.TeleportTypeUseTerrain)
 		{

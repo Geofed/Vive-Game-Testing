@@ -6,6 +6,7 @@ public class SpawnBall : MonoBehaviour {
 	public GameObject ball;
 	public GameObject spawner;
 	public ObjectPool pool;
+	public NetworkObjectPool networkPool;
 	private float cooldown;
 	public float cooldownTime;
 	// Use this for initialization
@@ -20,9 +21,13 @@ public class SpawnBall : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collision) {
 		if (cooldown <= Time.time) {
-			if (collision.gameObject.tag == "Controller") {
+			if (collision.gameObject.tag == "Controller") {				
 				cooldown = Time.time + cooldownTime;
-				pool.Spawn (spawner.transform.position);
+				if (pool) {
+					pool.Spawn (spawner.transform.position);
+				} else {
+					networkPool.Spawn (spawner.transform.position);
+				}
 			}
 		}
 	}
