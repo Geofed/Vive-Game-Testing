@@ -1,0 +1,28 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NetCollision.cs">
+    <Files>
+      <File FileName="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" Line="1" Column="1" />
+      <File FileName="Assets\SteamVR\readme.txt" Line="1" Column="1" />
+      <File FileName="Assets\SteamVR\Extras\SteamVR_TrackedController.cs" Line="1" Column="1" />
+      <File FileName="Assets\SteamVR\Scripts\SteamVR_Render.cs" Line="1" Column="1" />
+      <File FileName="Assets\SteamVR\Scripts\SteamVR_Camera.cs" Line="1" Column="1" />
+      <File FileName="Assets\line.shader" Line="1" Column="1" />
+      <File FileName="Assets\SteamVR\InteractionSystem\Core\Scripts\Hand.cs" Line="1" Column="1" />
+      <File FileName="Assets\SteamVR\InteractionSystem\Core\Scripts\Throwable.cs" Line="1" Column="1" />
+      <File FileName="Assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportArc.cs" Line="1" Column="1" />
+      <File FileName="Assets\SteamVR_Teleporter2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Hands.cs" Line="1" Column="1" />
+      <File FileName="Assets\Pickupable.cs" Line="1" Column="1" />
+      <File FileName="Assets\NetCollision.cs" Line="21" Column="14" />
+      <File FileName="Assets\ObjectPool.cs" Line="1" Column="1" />
+      <File FileName="Assets\Ball.cs" Line="1" Column="1" />
+      <File FileName="Assets\SpawnBall.cs" Line="1" Column="1" />
+      <File FileName="Assets\todo.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
