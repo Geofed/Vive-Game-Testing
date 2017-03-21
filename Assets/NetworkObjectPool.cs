@@ -10,8 +10,10 @@ public class NetworkObjectPool : NetworkBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if (!isServer)
+		if (!isServer) {
+			ClientScene.RegisterPrefab (template.gameObject);
 			return;
+		}
 		pool = new Poolable[amount];
 		for (int i = 0; i < amount; i++) {
 			pool [i] = Instantiate<Poolable> (template);

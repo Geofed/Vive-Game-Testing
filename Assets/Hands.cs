@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.VR;
 
 public class Hands : MonoBehaviour {
 
@@ -12,6 +13,10 @@ public class Hands : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		if (!VRSettings.enabled) {
+			Destroy (this);
+			return;
+		}
 		temporaryColliders = new Collider [5];
 		currentPosition = this.transform.position;
 		var trackedController = GetComponent<SteamVR_TrackedController>();
